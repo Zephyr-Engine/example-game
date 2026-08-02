@@ -1,0 +1,56 @@
+# Handwritten compatibility material for the backpack baseline scene.
+# The current basic shader only consumes the glTF base-color texture. The
+# normal and metallic/roughness textures stay in the project for the upcoming
+# material/submesh renderer work.
+[material]
+shader = "shaders/basic"
+
+[render_state]
+alpha_mode = "solid"
+alpha_cutoff = 0.5
+double_sided = true
+cull_mode = "none"
+depth_test = true
+depth_write = true
+blend_mode = "disabled"
+
+[texture.albedo]
+path = "textures/Scene_-_Root_baseColor.jpeg"
+resource = "u_albedo"
+set = 0
+binding = 0
+uv_set = 0
+uv_offset = [0, 0]
+uv_scale = [1, 1]
+uv_rotation = 0
+min_filter = "linear"
+mag_filter = "linear"
+mip_filter = "linear"
+wrap_s = "repeat"
+wrap_t = "repeat"
+max_anisotropy = 1
+
+[param.u_base_color]
+value = [1, 1, 1, 1]
+set = 1
+binding = 0
+
+[param.u_uv_scale]
+value = [1, 1]
+set = 1
+binding = 4
+
+[param.u_metallic]
+value = 1.0
+set = 1
+binding = 1
+
+[param.u_roughness]
+value = 1.0
+set = 1
+binding = 2
+
+[param.u_emissive]
+value = [0, 0, 0]
+set = 1
+binding = 3

@@ -1,4 +1,5 @@
 #version 330 core
+// VARIANTS: ALPHA_TEST
 
 in vec3 v_normal;
 in vec2 v_uv;
@@ -10,11 +11,22 @@ uniform float u_metallic;
 uniform float u_roughness;
 uniform vec3 u_emissive;
 
+#ifdef ALPHA_TEST
+uniform float u_alpha_cutoff;
+#endif
+
 out vec4 FragColor;
 
 void main() {
     vec3 normal_tint = normalize(v_normal) * 0.5 + 0.5;
     vec4 albedo = texture(u_albedo, v_uv * u_uv_scale) * u_base_color;
+
+#ifdef ALPHA_TEST
+    if (albedo.a < u_alpha_cutoff) {
+        discard;
+    }
+#endif
+
     vec3 lit = albedo.rgb * (0.35 + 0.65 * normal_tint.z) + u_emissive;
     FragColor = vec4(lit, albedo.a);
 }

@@ -1,0 +1,78 @@
+{
+  "format": "zephyr.scene",
+  "version": 1,
+  "scene_id": "c438c7ac-88a1-4a58-aad4-75e695c1c203",
+  "project_id": "bf5a424f-e93e-4977-9a7a-0c522318dfdc",
+  "name": "Backpack Baseline",
+  "schema_hash": 745135055453592279,
+  "asset_manifest_hash": 0,
+  "active_camera": "73de4681-4405-4e8e-9627-e520c02a92f2",
+  "entities": [
+    {
+      "id": "73de4681-4405-4e8e-9627-e520c02a92f2",
+      "name": "Camera",
+      "components": [
+        {
+          "type_id": "7fb84f38-52b6-4fd9-8c2f-fbd08c7a9001",
+          "version": 1,
+          "fields": [
+            {
+              "number": 1,
+              "value": {
+                "kind": "vec3",
+                "value": [0, 0, 7]
+              }
+            }
+          ]
+        },
+        {
+          "type_id": "7fb84f38-52b6-4fd9-8c2f-fbd08c7a9003",
+          "version": 1,
+          "fields": []
+        },
+        {
+          "type_id": "8c1f2a70-3d5e-4b91-8f42-1a6b9c0d3e02",
+          "version": 1,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "1db99802-5ec8-4398-a524-38bab5975cb9",
+      "name": "Backpack",
+      "components": [
+        {
+          "type_id": "7fb84f38-52b6-4fd9-8c2f-fbd08c7a9001",
+          "version": 1,
+          "fields": [
+            {
+              "number": 3,
+              "value": {
+                "kind": "vec3",
+                "value": [0.01, 0.01, 0.01]
+              }
+            }
+          ]
+        },
+        {
+          "type_id": "7fb84f38-52b6-4fd9-8c2f-fbd08c7a9002",
+          "version": 1,
+          "fields": [
+            {
+              "number": 1,
+              "value": {
+                "kind": "asset_ref",
+                "value": "ffd88ca9-ccdd-4763-83ff-d45de5481c95"
+              }
+            }
+          ]
+        },
+        {
+          "type_id": "8c1f2a70-3d5e-4b91-8f42-1a6b9c0d3e01",
+          "version": 1,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

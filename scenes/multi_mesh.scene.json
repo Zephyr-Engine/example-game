@@ -20,7 +20,11 @@
               "number": 1,
               "value": {
                 "kind": "vec3",
-                "value": [0, 0, 4]
+                "value": [
+                  0,
+                  0,
+                  4
+                ]
               }
             }
           ]
@@ -55,13 +59,6 @@
               "value": {
                 "kind": "asset_ref",
                 "value": "54ace63a-46c7-41b6-91f0-f1f469392d52"
-              }
-            },
-            {
-              "number": 2,
-              "value": {
-                "kind": "asset_ref",
-                "value": "b5634f18-a3ad-8dd8-bce6-fd72cfc0bb0d"
               }
             }
           ]

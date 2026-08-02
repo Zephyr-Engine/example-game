@@ -16,7 +16,17 @@
           "type_id": "7fb84f38-52b6-4fd9-8c2f-fbd08c7a9001",
           "version": 1,
           "fields": [
-            {"number": 1, "value": {"kind": "vec3", "value": [0, 0, 3]}}
+            {
+              "number": 1,
+              "value": {
+                "kind": "vec3",
+                "value": [
+                  0,
+                  0,
+                  3
+                ]
+              }
+            }
           ]
         },
         {
@@ -38,14 +48,31 @@
         {
           "type_id": "7fb84f38-52b6-4fd9-8c2f-fbd08c7a9001",
           "version": 1,
-          "fields": []
+          "fields": [
+            {
+              "number": 1,
+              "value": {
+                "kind": "vec3",
+                "value": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
         },
         {
           "type_id": "7fb84f38-52b6-4fd9-8c2f-fbd08c7a9002",
           "version": 1,
           "fields": [
-            {"number": 1, "value": {"kind": "asset_ref", "value": "7c403afb-2bb1-4442-ba18-68a9097f34ed"}},
-            {"number": 2, "value": {"kind": "asset_ref", "value": "1a358578-03d0-4d7b-b2a0-2be0426f3e9c"}}
+            {
+              "number": 1,
+              "value": {
+                "kind": "asset_ref",
+                "value": "7c403afb-2bb1-4442-ba18-68a9097f34ed"
+              }
+            }
           ]
         },
         {
